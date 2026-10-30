@@ -1,16 +1,33 @@
-## Hi there 👋
+# Olá, eu sou o Leonardo 👋
 
-<!--
-**LeoFR007/LeoFR007** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Estudante de **Engenharia de Computação na PUCRS**, apaixonado por tecnologia, principalmente nas áreas de máquinas, sistemas embarcados, drones e robôs de uso civil e militar.
 
-Here are some ideas to get you started:
+## 🔧 Sobre mim
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Gosto de colocar a mão na massa: montar, consertar e resolver problemas na prática. Essa curiosidade por entender como as coisas funcionam por dentro é o que me move, tanto no hardware quanto no software.
+
+## 🎯 Áreas de interesse
+
+- Sistemas embarcados
+- Drones e veículos tripulados e não tripulados
+- Robótica (civil e militar)
+- Máquinas e mecânica
+
+## 🎓 Formação e cursos
+
+- Engenharia de Computação, PUCRS (cursando)
+- Curso de Mecânico Automotivo (certificado)
+- Cursos técnicos no SENAI durante o ensino médio
+
+## 🌎 Idiomas
+
+- 🇧🇷 Português: nativo
+- 🇪🇸 Espanhol: fluente
+- 🇺🇸 Inglês: intermediário
+
+## 📫 Contato
+
+- LinkedIn: [adicione seu link aqui]
+- E-mail: leofr2007@outlook.com / leofinr@gmail.com
+
+⭐ Em breve, novos projetos por aqui!
