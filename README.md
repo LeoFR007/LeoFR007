@@ -13,10 +13,16 @@
 ## Ferramentas
 
 <p>
-  <img src="https://skillicons.dev/icons?i=c,python,git,github&theme=dark" alt="C, Python, Git e GitHub" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,java,py,html,git,github&theme=dark" alt="C, C++, Java, Python, HTML, Git e GitHub" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/SystemVerilog-1F4E79?style=for-the-badge" alt="SystemVerilog" />
+  <img src="https://img.shields.io/badge/SVG-1F4E79?style=for-the-badge" alt="SVG" />
+  <img src="https://img.shields.io/badge/LinkedIn-1F4E79?style=for-the-badge" alt="LinkedIn" />
 </p>
 
 ## Contato
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/leonardo-rodrigues-1238bb436)
-[![E-mail](https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:leofr2007@outlook.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](COLE-SEU-LINK-AQUI)
+[![E-mail](https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:SEU-EMAIL-AQUI)
