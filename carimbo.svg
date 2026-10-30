@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-labelledby="t">
+  <title id="t">Carimbo de desenho técnico: Leonardo, Engenharia de Computação, PUCRS, foco em sistemas embarcados, drones e robótica, mecânico automotivo certificado e cursos do SENAI, idiomas português, espanhol e inglês básico.</title>
+  <defs>
+    <pattern id="minor" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#CDE9FF" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace; }
+    .lbl { font-size: 13px; fill: #7FA6C9; }
+    .val { font-size: 18px; fill: #FFFFFF; font-weight: 700; }
+    .txt { font-size: 17px; fill: #CDE9FF; }
+    .led { animation: blink 1.8s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: .15; } }
+    @media (prefers-reduced-motion: reduce) { .led { animation: none; } }
+  </style>
+
+  <rect width="1000" height="300" rx="12" fill="#0F2D4E"/>
+  <rect width="1000" height="300" rx="12" fill="url(#minor)"/>
+
+  <!-- quadro -->
+  <rect x="14" y="14" width="972" height="272" fill="none" stroke="#CDE9FF" stroke-width="2"/>
+  <g stroke="#CDE9FF" stroke-width="1" stroke-opacity="0.7">
+    <line x1="14" y1="104" x2="986" y2="104"/>
+    <line x1="14" y1="194" x2="986" y2="194"/>
+    <line x1="338" y1="14" x2="338" y2="194"/>
+    <line x1="662" y1="14" x2="662" y2="194"/>
+  </g>
+
+  <!-- linha 1 -->
+  <text class="lbl" x="32" y="40">nome</text>
+  <text class="val" x="32" y="70">Leonardo</text>
+  <circle class="led" cx="312" cy="36" r="5" fill="#FFB000"/>
+
+  <text class="lbl" x="356" y="40">curso</text>
+  <text class="val" x="356" y="70">Engenharia de Computação</text>
+
+  <text class="lbl" x="680" y="40">instituição</text>
+  <text class="val" x="680" y="70">PUCRS</text>
+
+  <!-- linha 2 -->
+  <text class="lbl" x="32" y="130">foco</text>
+  <text class="val" x="32" y="158">Sistemas embarcados,</text>
+  <text class="val" x="32" y="180">drones e robótica</text>
+
+  <text class="lbl" x="356" y="130">formação técnica</text>
+  <text class="val" x="356" y="158">Mecânico automotivo</text>
+  <text class="val" x="356" y="180">(certificado) e SENAI</text>
+
+  <text class="lbl" x="680" y="130">idiomas</text>
+  <text class="val" x="680" y="158">Português e Espanhol</text>
+  <text class="val" x="680" y="180">Inglês básico</text>
+
+  <!-- linha 3 -->
+  <text class="lbl" x="32" y="220">resumo</text>
+  <text class="txt" x="32" y="250">Gosto de montar, consertar e resolver problemas na prática,</text>
+  <text class="txt" x="32" y="272">no hardware e no software.</text>
+</svg>

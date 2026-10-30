@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Leonardo, Engenharia de Computação na PUCRS</title>
+  <desc id="d">Planta técnica azul com vista superior de um drone de quatro hélices girando.</desc>
+  <defs>
+    <pattern id="minor" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#CDE9FF" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <pattern id="major" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M100 0H0V100" fill="none" stroke="#CDE9FF" stroke-opacity="0.16" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace; }
+    .spin-cw  { animation: cw 1.3s linear infinite;  transform-box: fill-box; transform-origin: center; }
+    .spin-ccw { animation: ccw 1.3s linear infinite; transform-box: fill-box; transform-origin: center; }
+    .pulse    { animation: pulse 2.2s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes cw  { to { transform: rotate(360deg); } }
+    @keyframes ccw { to { transform: rotate(-360deg); } }
+    @keyframes pulse { from { transform: scale(1); opacity: .8; } to { transform: scale(3.6); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .spin-cw, .spin-ccw, .pulse { animation: none; } }
+  </style>
+
+  <!-- fundo e malha -->
+  <rect width="1200" height="400" rx="12" fill="#0F2D4E"/>
+  <rect width="1200" height="400" rx="12" fill="url(#minor)"/>
+  <rect width="1200" height="400" rx="12" fill="url(#major)"/>
+  <rect x="12" y="12" width="1176" height="376" rx="6" fill="none" stroke="#CDE9FF" stroke-opacity="0.45" stroke-width="1.5"/>
+
+  <!-- linhas de centro -->
+  <g stroke="#7FA6C9" stroke-width="1" stroke-dasharray="14 4 2 4" fill="none">
+    <line x1="630" y1="200" x2="1010" y2="200"/>
+    <line x1="820" y1="52" x2="820" y2="348"/>
+    <line x1="710" y1="90" x2="930" y2="310" stroke-opacity="0.35"/>
+    <line x1="930" y1="90" x2="710" y2="310" stroke-opacity="0.35"/>
+  </g>
+
+  <!-- braços (contorno duplo) -->
+  <g stroke-linecap="round">
+    <g stroke="#CDE9FF" stroke-width="12">
+      <line x1="820" y1="200" x2="710" y2="90"/>
+      <line x1="820" y1="200" x2="930" y2="90"/>
+      <line x1="820" y1="200" x2="710" y2="310"/>
+      <line x1="820" y1="200" x2="930" y2="310"/>
+    </g>
+    <g stroke="#0F2D4E" stroke-width="9">
+      <line x1="820" y1="200" x2="710" y2="90"/>
+      <line x1="820" y1="200" x2="930" y2="90"/>
+      <line x1="820" y1="200" x2="710" y2="310"/>
+      <line x1="820" y1="200" x2="930" y2="310"/>
+    </g>
+  </g>
+
+  <!-- discos das hélices -->
+  <g fill="none" stroke="#7FA6C9" stroke-width="1" stroke-dasharray="3 5" stroke-opacity="0.8">
+    <circle cx="710" cy="90" r="64"/>
+    <circle cx="930" cy="90" r="64"/>
+    <circle cx="710" cy="310" r="64"/>
+    <circle cx="930" cy="310" r="64"/>
+  </g>
+
+  <!-- hélices girando (pares opostos em sentidos contrários) -->
+  <g fill="#CDE9FF" fill-opacity="0.10" stroke="#CDE9FF" stroke-width="1.5">
+    <g transform="translate(710 90)"><g class="spin-cw">
+      <ellipse cx="-33" cy="0" rx="29" ry="6.5"/><ellipse cx="33" cy="0" rx="29" ry="6.5"/>
+    </g></g>
+    <g transform="translate(930 90)"><g class="spin-ccw">
+      <ellipse cx="-33" cy="0" rx="29" ry="6.5"/><ellipse cx="33" cy="0" rx="29" ry="6.5"/>
+    </g></g>
+    <g transform="translate(710 310)"><g class="spin-ccw">
+      <ellipse cx="-33" cy="0" rx="29" ry="6.5"/><ellipse cx="33" cy="0" rx="29" ry="6.5"/>
+    </g></g>
+    <g transform="translate(930 310)"><g class="spin-cw">
+      <ellipse cx="-33" cy="0" rx="29" ry="6.5"/><ellipse cx="33" cy="0" rx="29" ry="6.5"/>
+    </g></g>
+  </g>
+
+  <!-- motores -->
+  <g fill="#0F2D4E" stroke="#CDE9FF" stroke-width="1.5">
+    <circle cx="710" cy="90" r="14"/><circle cx="930" cy="90" r="14"/>
+    <circle cx="710" cy="310" r="14"/><circle cx="930" cy="310" r="14"/>
+  </g>
+  <g fill="#CDE9FF">
+    <circle cx="710" cy="90" r="4"/><circle cx="930" cy="90" r="4"/>
+    <circle cx="710" cy="310" r="4"/><circle cx="930" cy="310" r="4"/>
+  </g>
+
+  <!-- corpo e controladora -->
+  <rect x="788" y="176" width="64" height="48" rx="9" fill="#0F2D4E" stroke="#CDE9FF" stroke-width="2"/>
+  <rect x="800" y="186" width="40" height="28" rx="3" fill="none" stroke="#7FA6C9" stroke-width="1"/>
+  <path d="M820 158 l8 13 h-16 z" fill="#FFB000"/>
+  <circle cx="820" cy="200" r="5" fill="#FFB000"/>
+  <circle class="pulse" cx="820" cy="200" r="5" fill="#FFB000"/>
+
+  <!-- cotas -->
+  <g stroke="#CDE9FF" stroke-width="1" fill="#CDE9FF">
+    <line x1="710" y1="318" x2="710" y2="364" stroke-opacity="0.6"/>
+    <line x1="930" y1="318" x2="930" y2="364" stroke-opacity="0.6"/>
+    <line x1="720" y1="356" x2="920" y2="356"/>
+    <path d="M710 356 l12 -4 v8 z" stroke="none"/>
+    <path d="M930 356 l-12 -4 v8 z" stroke="none"/>
+
+    <line x1="938" y1="90" x2="1024" y2="90" stroke-opacity="0.6"/>
+    <line x1="938" y1="310" x2="1024" y2="310" stroke-opacity="0.6"/>
+    <line x1="1014" y1="100" x2="1014" y2="300"/>
+    <path d="M1014 90 l-4 12 h8 z" stroke="none"/>
+    <path d="M1014 310 l-4 -12 h8 z" stroke="none"/>
+  </g>
+  <text x="820" y="346" font-size="14" fill="#FFB000" text-anchor="middle">220 mm</text>
+  <text x="1034" y="205" font-size="14" fill="#FFB000" text-anchor="middle" transform="rotate(90 1034 200)">220 mm</text>
+  <text x="1176" y="376" font-size="13" fill="#7FA6C9" text-anchor="end">vista superior, esc. 1:10</text>
+
+  <!-- identificação -->
+  <text x="58" y="196" font-size="88" font-weight="700" fill="#FFFFFF" letter-spacing="-3">Leonardo</text>
+  <rect x="62" y="216" width="132" height="5" fill="#FFB000"/>
+  <text x="60" y="270" font-size="24" fill="#CDE9FF">Engenharia de Computação, PUCRS</text>
+  <text x="60" y="306" font-size="19" fill="#7FA6C9">Sistemas embarcados, drones e robótica</text>
+</svg>

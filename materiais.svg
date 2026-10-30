@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" width="1000" height="330" role="img" aria-labelledby="t">
+  <title id="t">Lista de materiais: áreas de interesse (sistemas embarcados, drones, robótica, máquinas e mecânica) e nível de idiomas (português nativo, espanhol fluente, inglês básico).</title>
+  <defs>
+    <pattern id="minor" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#CDE9FF" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono','Courier New',monospace; }
+    .lbl  { font-size: 13px; fill: #7FA6C9; }
+    .num  { font-size: 15px; fill: #FFB000; font-weight: 700; }
+    .name { font-size: 18px; fill: #FFFFFF; font-weight: 700; }
+    .desc { font-size: 14px; fill: #CDE9FF; }
+    .lvl  { font-size: 14px; fill: #CDE9FF; }
+    .bar  { transform-box: fill-box; transform-origin: 0 50%; animation: grow 1.4s cubic-bezier(.2,.7,.2,1) both; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @media (prefers-reduced-motion: reduce) { .bar { animation: none; } }
+  </style>
+
+  <rect width="1000" height="330" rx="12" fill="#0F2D4E"/>
+  <rect width="1000" height="330" rx="12" fill="url(#minor)"/>
+
+  <!-- painel esquerdo: lista de materiais -->
+  <rect x="14" y="14" width="606" height="302" fill="none" stroke="#CDE9FF" stroke-width="2"/>
+  <g stroke="#CDE9FF" stroke-width="1" stroke-opacity="0.7">
+    <line x1="14" y1="58" x2="620" y2="58"/>
+    <line x1="14" y1="122" x2="620" y2="122" stroke-opacity="0.35"/>
+    <line x1="14" y1="186" x2="620" y2="186" stroke-opacity="0.35"/>
+    <line x1="14" y1="250" x2="620" y2="250" stroke-opacity="0.35"/>
+    <line x1="68" y1="14" x2="68" y2="316" stroke-opacity="0.35"/>
+    <line x1="320" y1="14" x2="320" y2="316" stroke-opacity="0.35"/>
+  </g>
+  <text class="lbl" x="28" y="42">item</text>
+  <text class="lbl" x="84" y="42">área de interesse</text>
+  <text class="lbl" x="336" y="42">o que me atrai</text>
+
+  <text class="num"  x="28" y="96">1</text>
+  <text class="name" x="84" y="96">Sistemas embarcados</text>
+  <text class="desc" x="336" y="96">software que controla hardware</text>
+
+  <text class="num"  x="28" y="160">2</text>
+  <text class="name" x="84" y="160">Drones</text>
+  <text class="desc" x="336" y="160">veículos aéreos não tripulados</text>
+
+  <text class="num"  x="28" y="224">3</text>
+  <text class="name" x="84" y="224">Robótica</text>
+  <text class="desc" x="336" y="224">civil e militar</text>
+
+  <text class="num"  x="28" y="288">4</text>
+  <text class="name" x="84" y="288">Máquinas e mecânica</text>
+  <text class="desc" x="336" y="288">montar, consertar, entender</text>
+
+  <!-- painel direito: idiomas -->
+  <rect x="640" y="14" width="346" height="302" fill="none" stroke="#CDE9FF" stroke-width="2"/>
+  <line x1="640" y1="58" x2="986" y2="58" stroke="#CDE9FF" stroke-width="1" stroke-opacity="0.7"/>
+  <text class="lbl" x="660" y="42">idiomas</text>
+
+  <text class="name" x="660" y="96">Português</text>
+  <text class="lvl" x="966" y="96" text-anchor="end">nativo</text>
+  <rect x="660" y="108" width="306" height="8" rx="4" fill="#CDE9FF" fill-opacity="0.15"/>
+  <rect class="bar" x="660" y="108" width="306" height="8" rx="4" fill="#FFB000" style="animation-delay:.1s"/>
+
+  <text class="name" x="660" y="181">Espanhol</text>
+  <text class="lvl" x="966" y="181" text-anchor="end">fluente</text>
+  <rect x="660" y="193" width="306" height="8" rx="4" fill="#CDE9FF" fill-opacity="0.15"/>
+  <rect class="bar" x="660" y="193" width="285" height="8" rx="4" fill="#FFB000" style="animation-delay:.3s"/>
+
+  <text class="name" x="660" y="266">Inglês</text>
+  <text class="lvl" x="966" y="266" text-anchor="end">básico</text>
+  <rect x="660" y="278" width="306" height="8" rx="4" fill="#CDE9FF" fill-opacity="0.15"/>
+  <rect class="bar" x="660" y="278" width="125" height="8" rx="4" fill="#FFB000" style="animation-delay:.5s"/>
+</svg>
